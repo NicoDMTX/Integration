@@ -9,9 +9,10 @@
 body {
     margin: 0;
     padding: 0;
-    
+    background: linear-gradient(hsl(135deg, 0%, 100%), hsl(100%, 98%));
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 .container {
@@ -24,40 +25,46 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--neutral-color-dark);
-}
-
-.hero-picture {
-    object-fit: cover;
-    object-position: right top;
-    width: 100%;
-    height: 100%;
+    background-color: var(--neutral-color-dark)
 }
 
 .right__container {
-    min-width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .left__container {
-    background-image: url("./images/bg-pattern-desktop.svg");
+    background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-width: 50%;
+    min-width: 61%;
     min-height: 100%;
+    float: left;
+    background-size: cover;
 }
 
 .left-content--container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 10%;
-    bottom: 30%;
+    align-content: flex-end;
+    margin-left: 20%;
+    margin-bottom: 20%;
 }
 
 .logo-base--apparel {
-    width: 120px;
-    height: 50px;
+    width: 30%;
     padding-bottom: 15%;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing: 1.2rem;
+}
+
+.brown {
+    color: var(--primary-color-desatured);
+    font-weight: inherit;
 }
