@@ -2,7 +2,8 @@
     --primary-color-desatured: hsl(0, 36%, 70%);
     --primary-color-soft: hsl(0, 93%, 68%);
 
-    --neutral-color-dark: hsla(0, 6%, 24%, 0.281);
+    --neutral-color-dark: hsla(0, 6%, 24%);
+    --neutral-color-picture: hsla(0, 6%, 24%, 0.222);
     
 }
 
@@ -12,7 +13,12 @@ body {
     background: linear-gradient(hsl(135deg, 0%, 100%), hsl(100%, 98%));
     overflow-y: hidden;
     overflow-x: hidden;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'JosefinSans';
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('/fonts/JosefinSans-Regular.ttf');
 }
 
 .container {
@@ -25,7 +31,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--neutral-color-dark)
+    background-color: var(--neutral-color-picture)
 }
 
 .right__container {
@@ -67,4 +73,14 @@ body {
 .brown {
     color: var(--primary-color-desatured);
     font-weight: inherit;
+}
+
+.black {
+    color: var(--neutral-color-dark);
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color-desatured);
 }
