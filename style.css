@@ -95,6 +95,7 @@ body {
     height: 46px;
     border-width: 0.5px;
     outline: none;
+    padding-left: 15px;
 }
 
 button {
@@ -121,5 +122,15 @@ button {
     font-size: 15px;
     font-family: 'JosefinSans';
     src: url('/fonts/JosefinSans-Regular.ttf');
-    padding-left: 15px;
+}
+
+.false-email {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: var(--primary-color-soft);
+    font-size: 14px;
+}
+
+.valid {
+    border-color: red;
 }
