@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-width: 61%;
+    min-width: 62%;
     min-height: 100%;
     float: left;
     background-size: cover;
@@ -55,13 +55,13 @@ body {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
-    margin-left: 20%;
-    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-bottom: 5%;
 }
 
 .logo-base--apparel {
     width: 30%;
-    padding-bottom: 15%;
+    padding-bottom: 20%;
 }
 
 .title {
@@ -81,7 +81,7 @@ body {
 
 .description {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color-desatured);
     padding-top: 20px;
     line-height: 30px;
@@ -91,6 +91,35 @@ body {
     width: 50%;
     border-style: double;
     border-radius: 30px;
-    border-color: grey;
-    height: 40px;
+    border-color: var(--neutral-color-picture);
+    height: 46px;
+    border-width: 0.5px;
+    outline: none;
+}
+
+button {
+    border-style: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: rgb(241, 151, 153);
+    position: relative;
+    right: 100px;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0px 9px 20px -4px rgb(241 151 153);
+}
+
+.input-button--container {
+    display: flex;
+    margin-top: 10px;
+}
+
+::placeholder {
+    color: rgb(241, 151, 153, .4);
+    font-size: 15px;
+    font-family: 'JosefinSans';
+    src: url('/fonts/JosefinSans-Regular.ttf');
+    padding-left: 15px;
 }
